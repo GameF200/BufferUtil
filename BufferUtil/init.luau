@@ -1,5 +1,6 @@
 --!native
 --!optimize 2
+--!strict
 
 local create = buffer.create
 
@@ -22,40 +23,40 @@ local buffer_util = {}
 buffer_util = setmetatable(buffer_util, {__index = data_types})
 
 buffer_util.Float = {
-	Write = function(buf: buffer, offset: number, value: number)
+	Write = function(buf: buffer, offset: number, value: number): buffer
 		buf = buf or create(SIZE_32)
 		writef32(buf, offset, value)
 
 		return buf
 	end,
 	
-	Read = function(buf: buffer, offset: number)
+	Read = function(buf: buffer, offset: number): number
 		return readf32(buf, offset)
 	end
 }
 
 buffer_util.Double = {
-	Write = function(buf: buffer, offset: number, value: number)
+	Write = function(buf: buffer, offset: number, value: number): buffer
 		buf = buf or create(SIZE_64)
 		writef64(buf, offset, value)
 
 		return buf
 	end,
 	
-	Read = function(buf: buffer, offset: number)
+	Read = function(buf: buffer, offset: number): number
 		return readf64(buf, offset)
 	end
 }
 
 buffer_util.Boolean = {
-	Write = function(buf: buffer, offset: number, value: boolean)
+	Write = function(buf: buffer, offset: number, value: boolean): buffer
 		buf = buf or create(SIZE_8)
 		writeu8(buf, offset, value and 1 or 0)
 
 		return buf
 	end,
 	
-	Read = function(buf: buffer, offset: number)
+	Read = function(buf: buffer, offset: number): boolean
 		return readu8(buf, offset) == 1 and true or false
 	end
 }
