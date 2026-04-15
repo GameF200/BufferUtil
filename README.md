@@ -27,9 +27,9 @@ There are 2 options for installing BufferUtil.
 
 ## API Reference
 
-### `.Write(buf: buffer, offset: number, value: Type): buffer`
+Every added/existing type must have `.Read` and `.Write` functions.
 
-`.Write` is a function that every added/existing type must have.
+### `.Write(buf: buffer, offset: number, value: Type): buffer`
 
 `.Write` writes the `value` to `buf` at `offset`, and returns `buf` (If the `buf` is nil, it will be created)
 
