@@ -5,23 +5,23 @@
 
 **BufferUtil** is <ins>fast and cheap</ins> serialization library for completely different tasks, be it one-time or continuous data serialization.
 
-Inspired by [BufferUtil by Sleitnick](https://github.com/Sleitnick/RbxUtil/tree/main/modules/buffer-util) and [Sera](https://github.com/MadStudioRoblox/Sera).
+Inspired by [BufferUtil](https://github.com/Sleitnick/RbxUtil/tree/main/modules/buffer-util) and [Sera](https://github.com/MadStudioRoblox/Sera).
 
 ## Benchmark
 All benchmarks were performed using [Scriptbench](https://devforum.roblox.com/t/scriptbench-v300-free-open-source-heavy-duty-graphing-benchmarker/3815286), and the benchmark code is located in the <a href="Benchmark">Benchmark</a> folder.
 
-1. Download latest rbxm file from [Releases](https://github.com/onedps/BufferUtil/releases/latest). After downloading throw rbxm file into Roblox Studio and it will appear in the workspace.
-
-2. Add [library](https://create.roblox.com/store/asset/126064419280191/BufferUtil) from creator store. (Currently unavailable)
+<img width="1212" height="751" alt="RobloxStudioBeta_LkSesEfeZJ" src="https://github.com/user-attachments/assets/333ee1c1-411a-4418-88a0-c60fd6d3a9fd" />
+<img width="1211" height="751" alt="RobloxStudioBeta_n5jobCB2kS" src="https://github.com/user-attachments/assets/16a1f753-2c98-4189-9bfd-fa84992a2f72" />
+<img width="1211" height="752" alt="RobloxStudioBeta_umYxgqLWcz" src="https://github.com/user-attachments/assets/b593e9e3-0ebd-484a-b0d6-b8eb780046ad" />
 
 ---
 
 ## Setup
 There are 2 options for installing BufferUtil.
 
-1. Download latest rbxm file from [Releases](https://github.com/onedps/BufferUtil/releases/latest). After downloading throw rbxm file into Roblox Studio and it will appear in the workspace.
+- Download latest rbxm file from [Releases](https://github.com/onedps/BufferUtil/releases/latest). After downloading throw rbxm file into Roblox Studio and it will appear in the workspace.
 
-2. Add [library](https://create.roblox.com/store/asset/126064419280191/BufferUtil) from creator store. (Currently unavailable)
+- Add [library](https://create.roblox.com/store/asset/126064419280191/BufferUtil) from creator store. (Currently unavailable)
 
 ---
 

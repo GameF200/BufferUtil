@@ -15,8 +15,7 @@ return {
     Name = "BufferUtilTest",
 
 	Parameter = function()
-		local rand = math.random()
-		return Vector3.new(rand, rand, rand)
+		return Vector3.new(1, 1, 1)
 	end,
 	BeforeAll = function() end,
 	AfterAll = function() end,
